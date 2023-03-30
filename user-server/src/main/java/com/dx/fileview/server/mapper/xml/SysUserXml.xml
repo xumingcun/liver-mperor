@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dx.fileview.server.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dx.fileview.server.bean.SysUser">
+        <result column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="login_account" property="loginAccount" />
+        <result column="mobile" property="mobile" />
+        <result column="email" property="email" />
+        <result column="nick_name" property="nickName" />
+        <result column="gender" property="gender" />
+        <result column="birthday" property="birthday" />
+        <result column="hierarchy_algebra" property="hierarchyAlgebra" />
+        <result column="canton_code" property="cantonCode" />
+        <result column="address" property="address" />
+        <result column="occupation" property="occupation" />
+        <result column="avatar_id" property="avatarId" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="create_user" property="createUser" />
+        <result column="create_time" property="createTime" />
+        <result column="update_user_id" property="updateUserId" />
+        <result column="update_user" property="updateUser" />
+        <result column="update_time" property="updateTime" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, username, `password`, login_account, mobile, email, nick_name, gender, birthday, hierarchy_algebra, canton_code, address, occupation, avatar_id, create_user_id, create_user, create_time, update_user_id, update_user, update_time, `status`
+    </sql>
+
+</mapper>

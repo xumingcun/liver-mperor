@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dx.fileview.server.mapper.SysRelationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dx.fileview.server.bean.SysRelation">
+        <result column="id" property="id" />
+        <result column="front_id" property="frontId" />
+        <result column="rear_id" property="rearId" />
+        <result column="relation_type" property="relationType" />
+        <result column="full_id" property="fullId" />
+        <result column="full_name" property="fullName" />
+        <result column="sort_no" property="sortNo" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="create_user" property="createUser" />
+        <result column="create_time" property="createTime" />
+        <result column="update_user_id" property="updateUserId" />
+        <result column="update_user" property="updateUser" />
+        <result column="update_time" property="updateTime" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, front_id, rear_id, relation_type, full_id, full_name, sort_no, create_user_id, create_user, create_time, update_user_id, update_user, update_time, `status`
+    </sql>
+
+</mapper>

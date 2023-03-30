@@ -1,0 +1,27 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: dx-manager-liver
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.150:8848
+        namespace: local-xmc
+        username: nacos
+        password: nacos
+        shared-configs:
+          - data-id: minio-config.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - data-id: mysql-config.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - data-id: share-redis.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+      discovery:
+        namespace: local-xmc
+        server-addr: 192.168.1.150:8848
+
+
